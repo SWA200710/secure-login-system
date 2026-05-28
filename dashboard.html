@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* 🌿 nature background */
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.85);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            color: #2ecc71;
+        }
+
+        p {
+            color: #333;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a:hover {
+            background: #c0392b;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>🌿 Welcome {{ user }}</h1>
+    <p>You are successfully logged in to Secure System</p>
+
+    <a href="/logout">Logout</a>
+
+</div>
+
+</body>
+</html>
